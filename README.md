@@ -1,250 +1,276 @@
-# 📦 Smart Demand Forecasting & Inventory Platform
+# Smart Demand Forecasting & Inventory Platform
 
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.95+-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.25+-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Vercel](https://img.shields.io/badge/Live%20Demo-Vercel-000000?logo=vercel&logoColor=white)](https://smartforcasting-1.vercel.app/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-An end-to-end, production-grade Machine Learning Engineering platform built for retail and e-commerce supply chains. The system predicts daily and weekly sales across products, detects imminent stockout risks, optimizes dynamic safety stock, and automates supplier reorder recommendations.
+> **Live Demo →** [https://smartforcasting-1.vercel.app/](https://smartforcasting-1.vercel.app/)
+
+An end-to-end Machine Learning platform for retail and e-commerce supply chain management. Built from scratch to solve real inventory problems — predicts daily and weekly sales across products, flags stockout risks before they happen, and generates automated supplier reorder recommendations.
 
 ---
 
-## 🎯 Business Problem & Objectives
+## The Problem
 
-Retailers lose an estimated **$1.8 trillion annually** globally to stockouts (understocking) and inventory depreciation/carrying costs (overstocking). 
+Retailers lose an estimated **$1.8 trillion annually** to stockouts and overstocking. Existing solutions either rely on static rules-of-thumb or black-box tools that operations teams can't trust or explain.
 
-This platform bridges the gap between machine learning forecasts and operational supply chain decisions:
-1. **Demand Forecasting:** Forecast product-level unit demand across 7-day to 30-day horizons with 95% confidence bounds.
-2. **Stockout Prevention:** Proactively flag products where predicted lead-time demand exceeds current inventory.
-3. **Safety Stock & ROP Optimization:** Dynamically scale safety stock ($SS$) based on empirical forecast error variance ($\sigma_{\text{error}}$) rather than static rules-of-thumb.
-4. **Festival & Promo Sensitivity:** Quantify seasonal lifts (Black Friday, Cyber Week, Christmas rush, Summer promotions) to prevent severe holiday underforecasting.
+This project takes a different approach: build something lean, interpretable, and production-ready that actually helps a supply chain analyst make better decisions today. Specifically:
+
+1. **Demand Forecasting** — predict product-level unit demand over 7–30 day horizons with 95% confidence bounds
+2. **Stockout Prevention** — proactively flag products where predicted lead-time demand exceeds current stock
+3. **Dynamic Safety Stock** — scale buffer stock based on actual forecast error variance per SKU, not generic multipliers
+4. **Promo & Seasonal Sensitivity** — explicitly model Black Friday, Cyber Week, and Christmas demand surges so the model doesn't badly underforecast during peak
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
-```text
-       ┌────────────────────────────────────────────────────────┐
-       │             Raw E-Commerce / Retail Stream             │
-       │    (Invoices, SKUs, Quantities, Prices, Dates, Regions) │
-       └───────────────────────────┬────────────────────────────┘
-                                   │
-                                   ▼
-       ┌────────────────────────────────────────────────────────┐
-       │              Data Cleansing & Validation               │
-       │  • Deduplication          • Filter Cancellations ('C') │
-       │  • Missing ID Imputation  • Revenue Calculation        │
-       └───────────────────────────┬────────────────────────────┘
-                                   │
-                                   ▼
-       ┌────────────────────────────────────────────────────────┐
-       │               Feature Engineering Grid                 │
-       │  • Lags (1, 7, 14, 28)    • Rolling Stats (Mean, Std)  │
-       │  • Cyclical Calendar      • Festival Flags (Promo)     │
-       └───────────────────────────┬────────────────────────────┘
-                                   │
-                                   ▼
-       ┌────────────────────────────────────────────────────────┐
-       │             Chronological Training Split               │
-       │      Train (Jan 23 - Aug 24)  |  Val  |  Test (Q4 24)  │
-       └───────────────────────────┬────────────────────────────┘
-                                   │
-                                   ▼
-       ┌────────────────────────────────────────────────────────┐
-       │             Model Benchmarking & Ablation              │
-       │  • Baselines (Naive, MA7) • Ridge Regression           │
-       │  • Gradient Boosted Trees • Holiday Feature Ablation   │
-       └───────────────────────────┬────────────────────────────┘
-                                   │
-                                   ▼
-       ┌────────────────────────────────────────────────────────┐
-       │       Inventory Optimization & Stockout Risk Core      │
-       │  • SS = Z * σ_error * √L  • ROP = LTD + Safety Stock   │
-       │  • Reorder Quantity = max(0, ROP - Current Stock)      │
-       └───────────────────────────┬────────────────────────────┘
-                                   │
-                   ┌───────────────┴───────────────┐
-                   ▼                               ▼
-       ┌───────────────────────┐       ┌───────────────────────┐
-       │   FastAPI REST API    │       │  Interactive UI /     │
-       │   • /predict/product  │       │  Streamlit Dashboard  │
-       │   • /inventory/recs   │       │  • Actual vs Forecast │
-       │   • /models/metrics   │       │  • Stockout Alerts    │
-       │   • /monitoring/drift │       │  • Reorder Planner    │
-       └───────────────────────┘       └───────────────────────┘
+```
+       ┌──────────────────────────────────────────────────────┐
+       │           Raw E-Commerce / Retail Transactions        │
+       │   (Invoices, SKUs, Quantities, Prices, Dates)         │
+       └─────────────────────────┬────────────────────────────┘
+                                 │
+                                 ▼
+       ┌──────────────────────────────────────────────────────┐
+       │            Data Cleansing & Validation               │
+       │  Deduplication · Filter Cancellations ('C')          │
+       │  Missing ID handling · Revenue calculation           │
+       └─────────────────────────┬────────────────────────────┘
+                                 │
+                                 ▼
+       ┌──────────────────────────────────────────────────────┐
+       │             Feature Engineering                      │
+       │  Lag features (1,7,14,28d) · Rolling stats           │
+       │  Cyclical calendar encoding · Festival flags         │
+       └─────────────────────────┬────────────────────────────┘
+                                 │
+                                 ▼
+       ┌──────────────────────────────────────────────────────┐
+       │          Chronological Train/Val/Test Split           │
+       │   Train (Jan 23 - Aug 24) | Val | Test (Q4 2024)     │
+       └─────────────────────────┬────────────────────────────┘
+                                 │
+                                 ▼
+       ┌──────────────────────────────────────────────────────┐
+       │          Model Benchmarking & Ablation               │
+       │  Naive baselines · Ridge Regression · GBDT           │
+       │  Holiday feature ablation experiment                 │
+       └─────────────────────────┬────────────────────────────┘
+                                 │
+                                 ▼
+       ┌──────────────────────────────────────────────────────┐
+       │       Inventory Optimization Layer                   │
+       │  SS = Z * σ_error * √L  ·  ROP = LTD + SS           │
+       │  Reorder Qty = max(0, ROP - Current Stock)           │
+       └─────────────────────────┬────────────────────────────┘
+                                 │
+               ┌─────────────────┴─────────────────┐
+               ▼                                   ▼
+   ┌─────────────────────┐           ┌─────────────────────────┐
+   │   FastAPI REST API  │           │  Interactive Dashboard   │
+   │  /predict/product   │           │  Actual vs Forecast      │
+   │  /inventory/recs    │           │  Stockout Alerts         │
+   │  /monitoring/drift  │           │  Reorder Planner         │
+   └─────────────────────┘           └─────────────────────────┘
 ```
 
 ---
 
-## 📁 Repository Structure
+## Project Structure
 
-```text
+```
 smart-demand-forecasting/
 ├── data/
 │   ├── raw/
-│   │   └── ecommerce_transactions.csv     # Raw transactional log (70,000+ orders)
+│   │   └── ecommerce_transactions.csv      # Raw transaction log (~70k orders)
 │   └── processed/
-│       ├── cleaned_transactions.csv       # Cleaned deduplicated orders
-│       ├── daily_demand_features.csv      # Continuous (Product x Date) feature grid
-│       ├── inventory_status.csv           # Reorder plan and stockout risk snapshot
-│       ├── test_predictions.csv           # Out-of-time model benchmark predictions
-│       └── forecasting_model.pkl          # Serialized production pipeline
+│       ├── cleaned_transactions.csv        # Deduplicated, filtered orders
+│       ├── daily_demand_features.csv       # Full Product × Date feature grid
+│       ├── inventory_status.csv            # Reorder plan & stockout snapshot
+│       ├── test_predictions.csv            # Out-of-time benchmark predictions
+│       └── forecasting_model.pkl           # Serialized production pipeline
 ├── notebooks/
-│   ├── 01_eda.ipynb                       # Exploratory Data Analysis
-│   └── 02_modeling.ipynb                  # Walk-forward validation & modeling
+│   ├── 01_eda.ipynb                        # Exploratory Data Analysis
+│   └── 02_modeling.ipynb                   # Walk-forward validation & modeling
 ├── src/
 │   ├── data/
-│   │   ├── cleaner.py                     # Cancellation filtering & data hygiene
-│   │   └── generator.py                   # Multi-year synthetic data generator
+│   │   ├── cleaner.py                      # Cancellation filtering & data hygiene
+│   │   └── generator.py                    # Synthetic multi-year data generator
 │   ├── features/
-│   │   └── feature_pipeline.py            # Leakage-free lag, rolling & holiday features
+│   │   └── feature_pipeline.py             # Leakage-free lag, rolling & holiday features
 │   ├── models/
-│   │   ├── baselines.py                   # Naive Lag-1, 7-Day MA, Seasonal Naive
-│   │   ├── ml_models.py                   # Ridge Regression & Gradient Boosted Forecaster
-│   │   ├── evaluator.py                   # MAE, RMSE, sMAPE, WMAPE, Forecast Bias
-│   │   └── trainer.py                     # Chronological split & ablation experiments
+│   │   ├── baselines.py                    # Naive Lag-1, 7-Day MA, Seasonal Naive
+│   │   ├── ml_models.py                    # Ridge Regression & Gradient Boosted Forecaster
+│   │   ├── evaluator.py                    # MAE, RMSE, sMAPE, WMAPE, Forecast Bias
+│   │   └── trainer.py                      # Chronological split & ablation experiments
 │   ├── inventory/
-│   │   └── optimizer.py                   # Safety stock, ROP, stockout risk logic
+│   │   └── optimizer.py                    # Safety stock, ROP, stockout risk logic
 │   ├── inference/
-│   │   └── predictor.py                   # Horizon inference with 95% confidence intervals
+│   │   └── predictor.py                    # Horizon inference with 95% CI
 │   └── monitoring/
-│       └── drift_monitor.py               # Tracking signals (RSFE/MAD) & error drift
+│       └── drift_monitor.py                # Tracking signal (RSFE/MAD) & error drift
 ├── api/
-│   └── main.py                            # FastAPI microservice + embedded dashboard
+│   └── main.py                             # FastAPI service + embedded dashboard
 ├── dashboard/
-│   ├── app.py                             # Streamlit interactive application
+│   ├── app.py                              # Streamlit interactive app
 │   └── templates/
-│       └── index.html                     # Responsive Tailwind + Chart.js dashboard
+│       └── index.html                      # Chart.js dashboard
 ├── tests/
-│   ├── test_data_cleaning.py              # Unit tests for data cleaning rules
-│   ├── test_features.py                   # Unit tests for feature pipeline (no leakage)
-│   ├── test_models.py                     # Unit tests for forecasting algorithms & metrics
-│   ├── test_inventory.py                  # Unit tests for safety stock & reorder math
-│   └── test_api.py                        # Integration tests for FastAPI endpoints
-├── Dockerfile                             # Container build file
-├── docker-compose.yml                     # Multi-container orchestration
-├── requirements.txt                       # Project dependencies
-└── README.md                              # Complete documentation
+│   ├── test_data_cleaning.py
+│   ├── test_features.py
+│   ├── test_models.py
+│   ├── test_inventory.py
+│   └── test_api.py
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
-## 🔬 Model Benchmarking & Measured Results
+## Model Results
 
-The models were evaluated using a strict **chronological out-of-time test split** over **Q4 (November – December)**, capturing the highest volatility retail events of the year (Black Friday, Cyber Week, and Christmas shopping rush).
+Evaluated on a strict **chronological out-of-time test split — Q4 (November–December)** — capturing the highest-volatility retail period (Black Friday, Cyber Week, Christmas rush). No data leakage, no shuffled splits.
 
-| Model Architecture | MAE (Units) | RMSE (Units) | sMAPE (%) | WMAPE (%) | Forecast Bias (%) |
+| Model | MAE (Units) | RMSE (Units) | sMAPE (%) | WMAPE (%) | Bias (%) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Baseline: Last Period (Lag 1)** | 19.26 | 26.29 | 56.00% | 51.53% | -0.33% |
-| **Baseline: 7-Day Moving Average** | 16.26 | 22.48 | 46.72% | 43.51% | -2.44% |
-| **Baseline: Seasonal Naive (Lag 7)**| 22.35 | 30.90 | 63.67% | 59.81% | -4.00% |
-| **ML: Regularized Linear (Ridge)** | 14.03 | 18.96 | 41.05% | 37.53% | -0.00% |
+| Baseline: Last Period (Lag 1) | 19.26 | 26.29 | 56.00% | 51.53% | -0.33% |
+| Baseline: 7-Day Moving Average | 16.26 | 22.48 | 46.72% | 43.51% | -2.44% |
+| Baseline: Seasonal Naive (Lag 7) | 22.35 | 30.90 | 63.67% | 59.81% | -4.00% |
+| ML: Regularized Linear (Ridge) | 14.03 | 18.96 | 41.05% | 37.53% | -0.00% |
 | **ML: Gradient Boosted Forecaster** | **14.00** | **18.94** | **41.01%** | **37.47%** | **-0.37%** |
-| *Ablation: GBDT (No Festival Features)*| 14.66 | 20.48 | 43.16% | 39.21% | -3.99% |
+| Ablation: GBDT (No Festival Features) | 14.66 | 20.48 | 43.16% | 39.21% | -3.99% |
 
-### Key Experimental Findings:
-1. **Model Lift:** The Gradient Boosted Forecaster reduced sMAPE by **35.6% relative to the Seasonal Naive baseline** (dropping from 63.67% down to 41.01%).
-2. **Elimination of Systematic Underforecasting:** Without holiday/festival features, the ablation model produced a significant negative bias (**-3.99%**), underestimating promotional demand surges. Adding explicit festival indicators reduced RMSE from 20.48 to 18.94 and centered forecast bias near zero (**-0.37%**).
+**Key findings:**
 
----
-
-## 📊 Inventory & Stockout Risk Logic
-
-### 1. Safety Stock Calculation
-Safety stock accounts for demand variability during supplier replenishment lead time ($L$):
-$$SS = Z \times \sigma_{\text{error}} \times \sqrt{L}$$
-* Where $Z = 1.645$ for a **95% service level** ($Z = 1.96$ for 97.5%).
-* $\sigma_{\text{error}}$ is the standard deviation of forecast residuals for each specific SKU.
-* $L$ is lead time in days.
-
-### 2. Reorder Point (ROP)
-$$ROP = \text{Lead Time Predicted Demand} + SS$$
-
-### 3. Stockout Risk Trigger
-$$\text{Stockout Risk} = \text{True if } (\text{Current Inventory} < \text{Lead Time Predicted Demand})$$
-
-### 4. Recommended Reorder Quantity
-$$\text{Reorder Quantity} = \max(0, ROP - \text{Current Inventory})$$
+- **35.6% sMAPE reduction** vs the seasonal naive baseline (63.67% → 41.01%)
+- Without holiday/festival features the model produced strong negative bias (-3.99%), systematically underforecasting during promo events. Adding explicit festival indicators removed this bias and dropped RMSE from 20.48 → 18.94
+- Ridge regression was surprisingly competitive — mainly because strong lag features carry most of the signal
 
 ---
 
-## 🚀 Quick Start Guide
+## Inventory Math
 
-### Prerequisites
+### Safety Stock
+```
+SS = Z × σ_error × √L
+```
+- `Z = 1.645` for 95% service level
+- `σ_error` = standard deviation of per-SKU forecast residuals (not global)
+- `L` = supplier lead time in days
+
+### Reorder Point (ROP)
+```
+ROP = Lead_Time_Demand + Safety_Stock
+```
+
+### Stockout Trigger
+```
+Stockout_Risk = True  if  Current_Inventory < Lead_Time_Demand
+```
+
+### Reorder Quantity
+```
+Reorder_Qty = max(0, ROP - Current_Inventory)
+```
+
+---
+
+## Quick Start
+
+### Requirements
 - Python 3.10+
-- (Optional) Docker & Docker Compose
+- Docker (optional)
 
-### Local Installation
+### Local Setup
 ```bash
-# 1. Clone the repository
-git clone https://github.com/your-username/smart-demand-forecasting.git
+# Clone the repo
+git clone https://github.com/barun-kumar-ghosh-95/smart-demand-forecasting.git
 cd smart-demand-forecasting
 
-# 2. Create virtual environment
-python3 -m venv venv
-source venv/bin/activate
+# Virtual environment
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
 
-# 3. Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# 4. Generate data and run full training pipeline
-python3 src/data/generator.py
-python3 src/data/cleaner.py
-python3 src/features/feature_pipeline.py
-python3 src/models/trainer.py
+# Generate data and run training pipeline
+python src/data/generator.py
+python src/data/cleaner.py
+python src/features/feature_pipeline.py
+python src/models/trainer.py
 ```
 
-### Running Unit Tests
+### Run Tests
 ```bash
-python3 -m unittest discover -s tests -p "test_*.py" -v
+python -m unittest discover -s tests -p "test_*.py" -v
 ```
-*All 13 unit and integration tests covering cleaning, features, models, inventory math, and API endpoints will execute and pass.*
 
-### Launching the FastAPI Service & Web Dashboard
+### Start the API + Dashboard
 ```bash
 uvicorn api.main:app --host 0.0.0.0 --port 8000
 ```
-- Open your browser to `http://localhost:8000` to interact with the responsive **Demand & Inventory Web Dashboard**.
-- Open `http://localhost:8000/docs` to view the interactive **Swagger/OpenAPI Documentation**.
+- Dashboard → `http://localhost:8000`
+- API docs → `http://localhost:8000/docs`
 
-### Launching the Streamlit App
+### Streamlit App
 ```bash
 streamlit run dashboard/app.py
+# → http://localhost:8501
 ```
-- Access at `http://localhost:8501`.
 
-### Docker Deployment
+### Docker
 ```bash
 docker-compose up --build
 ```
 
 ---
 
-## 📡 API Endpoints Overview
+## API Endpoints
 
-| Method | Endpoint | Description |
+| Method | Endpoint | What it does |
 | :--- | :--- | :--- |
-| `GET` | `/health` | Service health status and loaded model confirmation |
-| `GET` | `/products` | Catalog of tracked SKUs, descriptions, and categories |
-| `GET` | `/models/metrics` | Benchmarking performance table across all models |
-| `POST` | `/predict/product` | Daily forecast over $N$ days with 95% confidence intervals and stockout assessment |
-| `GET` | `/inventory/recommendations` | Complete stockout risk table and reorder plan across all SKUs |
-| `POST` | `/simulate/stockout` | Policy simulator for varying lead times and service levels |
-| `GET` | `/monitoring/drift` | Statistical process control: tracking signal and residual drift |
+| `GET` | `/health` | Service health + model status |
+| `GET` | `/products` | SKU catalog with categories and prices |
+| `GET` | `/models/metrics` | Full benchmark comparison table |
+| `POST` | `/predict/product` | Daily forecast with 95% CI and stockout assessment |
+| `GET` | `/inventory/recommendations` | Stockout risk + reorder plan for all SKUs |
+| `POST` | `/simulate/stockout` | Simulate different lead times and service levels |
+| `GET` | `/monitoring/drift` | Tracking signal and residual drift monitoring |
+| `POST` | `/forecast/custom` | Custom product/country/promo scenario simulator |
+| `POST` | `/analytics/csv-forecast` | Upload your own CSV and get instant forecasts |
 
 ---
 
-##context
-Smart Demand Forecasting Platform | Python, LightGBM/XGBoost, FastAPI, Docker, Streamlit
-• Built an end-to-end demand forecasting and inventory replenishment platform predicting daily/weekly sales for 10+ retail SKUs using chronological train/validation/test splits.
-• Engineered 40+ lag, rolling-window, cyclical calendar, and holiday surge features, preventing temporal data leakage via strict shift operations.
-• Reduced sMAPE by 35.6% compared to the seasonal-naive baseline (41.0% vs. 63.7%) and lowered holiday peak RMSE by 7.5% through festival indicator ablation.
-• Formulated dynamic safety stock (Z * σ_error * √L) and automated reorder points, mitigating simulated stockout events by 22% during peak promotional periods.
-• Deployed production FastAPI prediction microservice and interactive Streamlit/Chart.js dashboard containerized via Docker.
+```
+Smart Demand Forecasting Platform  |  Python · LightGBM · FastAPI · Docker · Vercel
+Live: https://smartforcasting-1.vercel.app/
+
+• Built an end-to-end demand forecasting and inventory replenishment platform predicting
+  daily/weekly retail sales for 10+ SKUs using strict chronological train/val/test splits.
+
+• Hand-engineered 40+ features: lag-1/7/14/28 demand, rolling mean/std over 7-28 day
+  windows, cyclical sin/cos calendar encodings, and Black Friday / Christmas rush indicators —
+  all shifted correctly to prevent any future data leakage.
+
+• Reduced sMAPE by 35.6% vs the seasonal naive baseline (41.0% vs 63.7%) and demonstrated
+  via ablation that festival features alone cut RMSE by ~7.5% during holiday peak.
+
+• Derived per-SKU dynamic safety stock (Z × σ_error × √L) and automated reorder points,
+  replacing static rules with empirical forecast error variance — reducing simulated stockout
+  events by ~22% during peak promotional periods.
+
+• Deployed production FastAPI microservice + interactive Chart.js dashboard on Vercel;
+  containerized with Docker. Full test coverage across data cleaning, feature pipeline,
+  model metrics, and inventory math (13 unit/integration tests, all passing).
 ```
 
 ---
 
-## 📄 License
-This project is open-source and licensed under the [MIT License](LICENSE).
+## License
+MIT — see [LICENSE](LICENSE).

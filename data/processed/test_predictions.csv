@@ -1,0 +1,601 @@
+Date,StockCode,Description,Category,Quantity,Pred_Seasonal_Naive,Pred_Moving_Avg_7,Pred_Ridge,Pred_GBDT,Pred_GBDT_No_Festivals
+2024-11-01,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,59,31.0,27.7,37.1,36.9,41.1
+2024-11-01,SKU_1002,Wireless Bluetooth Earbuds,Electronics,25,16.0,23.0,26.6,26.5,30.8
+2024-11-01,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,18,20.0,14.4,20.7,20.8,24.2
+2024-11-01,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,12,12.0,13.0,20.7,20.8,24.0
+2024-11-01,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,22,36.0,34.0,41.6,41.4,45.6
+2024-11-01,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,27,23.0,11.9,18.7,18.9,23.6
+2024-11-01,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,35,16.0,10.4,14.0,14.7,19.0
+2024-11-01,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,36,36.0,18.0,29.1,29.1,31.7
+2024-11-01,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,5,16.0,12.1,16.5,16.5,21.4
+2024-11-01,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,38,29.0,15.7,23.7,23.7,26.9
+2024-11-02,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,25,37.0,31.7,37.9,37.7,45.1
+2024-11-02,SKU_1002,Wireless Bluetooth Earbuds,Electronics,30,13.0,24.3,26.0,25.9,31.6
+2024-11-02,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,25,20.0,14.1,19.6,19.5,22.7
+2024-11-02,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,14,21.0,13.0,20.4,20.6,23.1
+2024-11-02,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,30,25.0,32.0,41.6,41.4,45.5
+2024-11-02,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,39,14.0,12.4,17.5,17.6,22.6
+2024-11-02,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,15,6.0,13.1,14.9,14.8,21.7
+2024-11-02,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,9,15.0,18.0,27.8,27.5,31.3
+2024-11-02,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,29,7.0,10.6,15.2,15.5,19.4
+2024-11-02,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,14,18.0,17.0,24.3,24.1,29.7
+2024-11-03,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,53,40.0,30.0,38.0,37.8,42.0
+2024-11-03,SKU_1002,Wireless Bluetooth Earbuds,Electronics,39,34.0,26.7,28.7,28.5,33.8
+2024-11-03,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,15,8.0,14.9,20.8,20.7,24.1
+2024-11-03,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,3,17.0,12.0,20.8,21.0,22.8
+2024-11-03,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,37,33.0,32.7,43.8,43.6,48.3
+2024-11-03,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,34,2.0,16.0,19.4,19.2,27.1
+2024-11-03,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,6,11.0,14.4,15.7,15.8,21.8
+2024-11-03,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,58,18.0,17.1,29.1,29.0,31.3
+2024-11-03,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,19,11.0,13.7,17.1,17.0,22.8
+2024-11-03,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,31,8.0,16.4,23.4,23.5,27.5
+2024-11-04,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,63,12.0,31.9,31.7,31.2,39.0
+2024-11-04,SKU_1002,Wireless Bluetooth Earbuds,Electronics,12,30.0,27.4,22.7,22.2,28.3
+2024-11-04,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,34,12.0,15.9,14.8,14.4,17.7
+2024-11-04,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,26,3.0,10.0,14.3,14.7,15.8
+2024-11-04,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,31,27.0,33.3,36.7,36.1,41.0
+2024-11-04,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,33,3.0,20.6,14.0,13.5,23.0
+2024-11-04,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,8,17.0,13.7,10.5,10.2,15.6
+2024-11-04,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,35,15.0,22.9,26.0,25.4,33.5
+2024-11-04,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,15,17.0,14.9,12.0,11.5,17.1
+2024-11-04,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,18,7.0,19.7,18.7,18.4,24.7
+2024-11-05,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,46,16.0,39.1,33.6,33.7,44.1
+2024-11-05,SKU_1002,Wireless Bluetooth Earbuds,Electronics,19,26.0,24.9,21.5,21.7,24.9
+2024-11-05,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,23,21.0,19.0,16.8,16.9,22.4
+2024-11-05,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,14,7.0,13.3,16.1,16.3,20.2
+2024-11-05,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,53,73.0,33.9,37.9,38.0,39.6
+2024-11-05,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,13,17.0,24.9,13.9,14.2,23.3
+2024-11-05,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,9,7.0,12.4,9.9,10.2,14.4
+2024-11-05,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,34,5.0,25.7,24.1,24.2,30.4
+2024-11-05,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,18,10.0,14.6,11.2,11.3,15.7
+2024-11-05,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,41,18.0,21.3,19.4,19.5,24.8
+2024-11-06,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,55,16.0,43.4,33.5,33.6,42.8
+2024-11-06,SKU_1002,Wireless Bluetooth Earbuds,Electronics,30,29.0,23.9,22.4,22.5,25.3
+2024-11-06,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,24,9.0,19.3,15.6,15.9,20.5
+2024-11-06,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,22,15.0,14.3,16.7,17.1,21.1
+2024-11-06,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,39,26.0,31.0,37.3,37.4,40.3
+2024-11-06,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,14,4.0,24.3,14.1,14.4,22.7
+2024-11-06,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,6,7.0,12.7,10.2,10.7,14.6
+2024-11-06,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,5,23.0,29.9,25.8,25.9,32.8
+2024-11-06,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,8,14.0,15.7,12.0,12.2,16.5
+2024-11-06,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,12,15.0,24.6,21.5,21.6,29.4
+2024-11-07,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,60,42.0,49.0,36.6,36.3,45.8
+2024-11-07,SKU_1002,Wireless Bluetooth Earbuds,Electronics,27,13.0,24.0,23.8,23.3,27.9
+2024-11-07,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,6,11.0,21.4,17.7,17.4,23.1
+2024-11-07,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,31,16.0,15.3,19.2,18.8,22.5
+2024-11-07,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,60,18.0,32.9,38.7,38.2,41.2
+2024-11-07,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,4,20.0,25.7,17.1,16.7,25.0
+2024-11-07,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,14,9.0,12.6,12.2,11.9,16.2
+2024-11-07,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,34,14.0,27.3,27.2,26.8,32.6
+2024-11-07,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,4,10.0,14.9,13.4,13.3,17.9
+2024-11-07,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,11,15.0,24.1,22.0,21.6,27.9
+2024-11-08,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,51,59.0,51.6,41.1,40.9,50.8
+2024-11-08,SKU_1002,Wireless Bluetooth Earbuds,Electronics,38,25.0,26.0,26.7,26.5,31.1
+2024-11-08,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,43,18.0,20.7,20.3,20.3,26.0
+2024-11-08,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,34,12.0,17.4,21.2,21.3,26.6
+2024-11-08,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,61,22.0,38.9,43.0,42.8,49.1
+2024-11-08,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,27,27.0,23.4,18.8,18.7,26.1
+2024-11-08,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,19,35.0,13.3,15.8,16.0,20.8
+2024-11-08,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,49,36.0,30.1,31.3,31.0,39.5
+2024-11-08,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,4,5.0,14.0,15.9,16.1,21.2
+2024-11-08,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,45,38.0,23.6,25.9,25.9,31.8
+2024-11-09,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,34,25.0,50.4,38.1,37.9,47.1
+2024-11-09,SKU_1002,Wireless Bluetooth Earbuds,Electronics,60,30.0,27.9,27.0,26.8,31.9
+2024-11-09,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,28,25.0,24.3,22.2,22.0,30.2
+2024-11-09,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,47,14.0,20.6,21.9,21.7,28.4
+2024-11-09,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,92,30.0,44.4,43.3,43.0,50.0
+2024-11-09,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,15,39.0,23.4,19.2,19.0,26.6
+2024-11-09,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,13,15.0,11.0,13.8,14.0,17.9
+2024-11-09,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,33,9.0,32.0,30.2,30.0,39.8
+2024-11-09,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,30,29.0,13.9,16.3,16.5,20.9
+2024-11-09,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,35,14.0,24.6,24.9,24.7,33.5
+2024-11-10,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,43,53.0,51.7,40.7,40.7,47.7
+2024-11-10,SKU_1002,Wireless Bluetooth Earbuds,Electronics,38,39.0,32.1,30.0,29.7,37.1
+2024-11-10,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,27,15.0,24.7,21.3,21.0,27.6
+2024-11-10,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,16,3.0,25.3,23.1,23.2,33.4
+2024-11-10,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,60,37.0,53.3,45.5,45.2,57.5
+2024-11-10,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,19,34.0,20.0,18.6,18.7,23.5
+2024-11-10,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,12,6.0,10.7,13.8,14.4,18.1
+2024-11-10,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,19,58.0,35.4,32.3,32.1,39.1
+2024-11-10,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,28,19.0,14.0,18.0,17.9,23.9
+2024-11-10,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,29,31.0,27.6,26.1,25.9,33.7
+2024-11-11,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,57,63.0,50.3,36.2,35.7,42.6
+2024-11-11,SKU_1002,Wireless Bluetooth Earbuds,Electronics,15,12.0,32.0,22.3,21.8,27.9
+2024-11-11,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,11,34.0,26.4,16.6,16.0,22.3
+2024-11-11,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,29,26.0,27.1,18.6,18.3,25.7
+2024-11-11,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,24,31.0,56.6,40.1,39.6,50.4
+2024-11-11,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,6,33.0,17.9,12.8,12.5,16.2
+2024-11-11,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,12,8.0,11.6,8.8,9.0,13.7
+2024-11-11,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,55,35.0,29.9,24.6,24.0,28.5
+2024-11-11,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,15,15.0,15.3,12.8,12.3,19.2
+2024-11-11,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,30,18.0,27.3,20.3,19.8,26.5
+2024-11-12,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,34,46.0,49.4,35.4,35.5,40.9
+2024-11-12,SKU_1002,Wireless Bluetooth Earbuds,Electronics,16,19.0,32.4,22.3,22.4,26.7
+2024-11-12,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,13,23.0,23.1,15.9,16.3,21.3
+2024-11-12,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,20,14.0,27.6,18.4,18.5,26.5
+2024-11-12,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,44,53.0,55.6,40.4,40.6,49.4
+2024-11-12,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,22,13.0,14.0,11.7,12.3,14.5
+2024-11-12,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,10,9.0,12.1,8.7,9.3,14.1
+2024-11-12,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,22,34.0,32.7,25.5,25.6,33.1
+2024-11-12,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,25,18.0,15.3,12.3,12.6,17.6
+2024-11-12,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,12,41.0,29.0,20.3,20.3,25.9
+2024-11-13,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,38,55.0,47.7,33.8,33.8,35.5
+2024-11-13,SKU_1002,Wireless Bluetooth Earbuds,Electronics,38,30.0,32.0,24.0,24.1,28.9
+2024-11-13,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,44,24.0,21.7,16.6,17.1,21.7
+2024-11-13,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,30,22.0,28.4,19.3,19.4,26.0
+2024-11-13,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,32,39.0,54.3,39.9,40.0,49.4
+2024-11-13,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,10,14.0,15.3,12.8,13.0,16.1
+2024-11-13,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,9,6.0,12.3,9.2,9.8,14.4
+2024-11-13,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,41,5.0,31.0,24.1,24.2,29.4
+2024-11-13,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,4,8.0,16.3,13.6,13.8,19.9
+2024-11-13,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,31,12.0,24.9,19.0,19.3,23.1
+2024-11-14,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,29,60.0,45.3,35.4,34.9,36.1
+2024-11-14,SKU_1002,Wireless Bluetooth Earbuds,Electronics,33,27.0,33.1,26.1,25.6,32.2
+2024-11-14,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,32,6.0,24.6,19.2,18.7,27.5
+2024-11-14,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,13,31.0,29.6,21.6,21.0,28.3
+2024-11-14,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,30,60.0,53.3,42.0,41.5,48.8
+2024-11-14,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,6,4.0,14.7,14.3,14.0,17.0
+2024-11-14,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,8,14.0,12.7,11.6,11.5,16.5
+2024-11-14,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,33,34.0,36.1,29.0,28.5,35.0
+2024-11-14,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,21,4.0,15.7,14.2,14.1,19.5
+2024-11-14,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,26,11.0,27.6,21.3,20.8,27.0
+2024-11-15,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,60,51.0,40.9,38.4,38.1,38.8
+2024-11-15,SKU_1002,Wireless Bluetooth Earbuds,Electronics,34,38.0,34.0,28.5,28.3,34.2
+2024-11-15,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,30,43.0,28.3,23.2,23.0,30.8
+2024-11-15,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,30,34.0,27.0,23.3,23.3,28.9
+2024-11-15,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,59,61.0,49.0,43.4,43.2,48.4
+2024-11-15,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,7,27.0,15.0,17.7,17.9,21.1
+2024-11-15,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,26,19.0,11.9,15.0,15.3,21.0
+2024-11-15,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,49,49.0,36.0,31.7,31.4,37.0
+2024-11-15,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,15,4.0,18.1,17.1,17.0,23.9
+2024-11-15,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,42,45.0,29.7,26.0,25.8,31.3
+2024-11-16,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,25,34.0,42.1,37.4,37.2,39.0
+2024-11-16,SKU_1002,Wireless Bluetooth Earbuds,Electronics,24,60.0,33.4,28.6,28.4,32.8
+2024-11-16,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,32,28.0,26.4,21.9,21.7,27.8
+2024-11-16,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,15,47.0,26.4,23.1,22.8,27.5
+2024-11-16,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,71,92.0,48.7,43.8,43.6,48.1
+2024-11-16,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,10,15.0,12.1,17.2,17.3,21.0
+2024-11-16,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,18,13.0,12.9,13.8,14.2,20.1
+2024-11-16,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,45,33.0,36.0,29.5,29.5,35.4
+2024-11-16,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,10,30.0,19.7,17.4,17.2,23.4
+2024-11-16,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,19,35.0,29.3,24.5,24.2,29.7
+2024-11-17,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,62,43.0,40.9,37.1,36.9,35.3
+2024-11-17,SKU_1002,Wireless Bluetooth Earbuds,Electronics,28,38.0,28.3,28.3,28.1,31.3
+2024-11-17,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,17,27.0,27.0,22.4,22.1,28.1
+2024-11-17,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,23,16.0,21.9,21.6,21.4,23.9
+2024-11-17,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,55,60.0,45.7,44.0,43.8,47.5
+2024-11-17,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,17,19.0,11.4,18.5,18.9,22.9
+2024-11-17,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,35,12.0,13.6,15.0,15.1,20.2
+2024-11-17,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,38,19.0,37.7,31.6,31.4,38.6
+2024-11-17,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,17,28.0,16.9,17.3,17.5,22.6
+2024-11-17,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,33,29.0,27.0,24.2,23.9,27.2
+2024-11-18,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,21,57.0,43.6,33.3,32.7,36.5
+2024-11-18,SKU_1002,Wireless Bluetooth Earbuds,Electronics,8,15.0,26.9,21.5,20.9,24.5
+2024-11-18,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,9,11.0,25.6,16.3,16.0,21.6
+2024-11-18,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,12,29.0,22.9,16.9,16.3,19.6
+2024-11-18,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,29,24.0,45.0,35.3,34.7,37.6
+2024-11-18,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,17,6.0,11.1,12.4,12.5,17.5
+2024-11-18,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,3,12.0,16.9,10.4,10.1,18.2
+2024-11-18,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,9,55.0,40.4,27.0,26.5,32.7
+2024-11-18,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,7,15.0,15.3,11.9,11.4,17.0
+2024-11-18,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,6,30.0,27.6,19.1,18.8,23.7
+2024-11-19,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,21,34.0,38.4,31.8,31.9,32.4
+2024-11-19,SKU_1002,Wireless Bluetooth Earbuds,Electronics,22,16.0,25.9,20.5,20.9,23.4
+2024-11-19,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,10,13.0,25.3,17.1,17.4,22.8
+2024-11-19,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,17,20.0,20.4,16.1,16.3,18.3
+2024-11-19,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,38,44.0,45.7,36.5,36.8,38.3
+2024-11-19,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,17,22.0,12.7,12.5,12.9,17.7
+2024-11-19,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,3,10.0,15.6,9.5,10.0,15.2
+2024-11-19,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,62,22.0,33.9,23.7,24.2,28.5
+2024-11-19,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,15,25.0,14.1,12.0,12.6,17.2
+2024-11-19,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,16,12.0,24.1,18.4,18.7,23.2
+2024-11-20,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,68,38.0,36.6,33.0,33.1,35.1
+2024-11-20,SKU_1002,Wireless Bluetooth Earbuds,Electronics,10,38.0,26.7,23.1,23.2,26.5
+2024-11-20,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,15,44.0,24.9,18.5,18.9,23.7
+2024-11-20,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,24,30.0,20.0,17.4,17.5,19.0
+2024-11-20,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,41,32.0,44.9,38.5,38.6,41.7
+2024-11-20,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,15,10.0,12.0,12.9,13.1,18.3
+2024-11-20,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,13,9.0,14.6,10.6,11.1,16.4
+2024-11-20,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,35,41.0,39.6,27.3,27.4,35.6
+2024-11-20,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,9,4.0,12.7,11.9,12.4,16.9
+2024-11-20,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,2,31.0,24.7,19.9,20.0,24.3
+2024-11-21,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,17,29.0,40.9,36.3,36.0,45.4
+2024-11-21,SKU_1002,Wireless Bluetooth Earbuds,Electronics,27,33.0,22.7,25.1,24.7,27.5
+2024-11-21,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,26,32.0,20.7,19.8,19.2,23.1
+2024-11-21,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,34,13.0,19.1,18.4,18.1,21.0
+2024-11-21,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,56,30.0,46.1,40.9,40.4,44.8
+2024-11-21,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,16,6.0,12.7,14.0,13.8,19.1
+2024-11-21,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,6,8.0,15.1,12.7,12.6,19.4
+2024-11-21,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,24,33.0,38.7,27.3,26.7,32.6
+2024-11-21,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,2,21.0,13.4,14.6,14.3,18.9
+2024-11-21,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,42,26.0,20.6,21.1,20.7,23.6
+2024-11-22,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,38,60.0,39.1,40.2,40.0,46.3
+2024-11-22,SKU_1002,Wireless Bluetooth Earbuds,Electronics,43,34.0,21.9,27.8,27.6,31.4
+2024-11-22,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,20,30.0,19.9,22.9,22.7,28.1
+2024-11-22,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,29,30.0,22.1,22.9,22.6,28.0
+2024-11-22,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,59,59.0,49.9,45.1,44.9,50.7
+2024-11-22,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,14,7.0,14.1,17.3,17.4,23.8
+2024-11-22,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,3,26.0,14.9,16.3,16.3,22.8
+2024-11-22,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,40,49.0,37.4,31.1,30.9,35.9
+2024-11-22,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,32,15.0,10.7,15.9,16.2,19.1
+2024-11-22,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,33,42.0,22.9,26.3,26.1,33.0
+2024-11-23,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,69,25.0,36.0,38.0,37.8,44.4
+2024-11-23,SKU_1002,Wireless Bluetooth Earbuds,Electronics,32,24.0,23.1,27.9,27.7,34.1
+2024-11-23,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,22,32.0,18.4,21.4,21.1,24.8
+2024-11-23,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,15,15.0,22.0,22.1,21.9,27.7
+2024-11-23,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,51,71.0,49.9,45.8,45.5,52.8
+2024-11-23,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,11,10.0,15.1,15.9,16.2,22.7
+2024-11-23,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,10,18.0,11.6,15.2,15.7,19.7
+2024-11-23,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,29,45.0,36.1,29.6,29.3,34.8
+2024-11-23,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,26,10.0,13.1,16.4,16.5,21.9
+2024-11-23,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,47,19.0,21.6,23.5,23.3,28.9
+2024-11-24,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,92,62.0,42.3,76.8,76.6,51.8
+2024-11-24,SKU_1002,Wireless Bluetooth Earbuds,Electronics,52,28.0,24.3,63.4,63.2,34.2
+2024-11-24,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,31,17.0,17.0,56.0,56.0,25.3
+2024-11-24,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,72,23.0,22.0,56.5,56.3,25.6
+2024-11-24,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,141,55.0,47.0,79.6,79.4,50.9
+2024-11-24,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,19,17.0,15.3,51.6,52.1,23.8
+2024-11-24,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,24,35.0,10.4,52.0,52.2,21.0
+2024-11-24,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,41,38.0,33.9,64.4,64.2,33.1
+2024-11-24,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,58,17.0,15.4,52.6,52.4,24.5
+2024-11-24,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,67,33.0,25.6,60.3,60.3,33.9
+2024-11-25,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,70,21.0,46.6,70.5,70.0,51.0
+2024-11-25,SKU_1002,Wireless Bluetooth Earbuds,Electronics,47,8.0,27.7,57.6,57.1,31.2
+2024-11-25,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,26,9.0,19.0,51.0,50.4,21.7
+2024-11-25,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,19,12.0,29.0,53.9,53.6,31.5
+2024-11-25,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,77,29.0,59.3,76.6,76.1,62.1
+2024-11-25,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,26,17.0,15.6,46.7,46.7,18.9
+2024-11-25,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,7,3.0,8.9,45.4,45.3,15.4
+2024-11-25,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,56,9.0,34.3,58.9,58.4,30.8
+2024-11-25,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,46,7.0,21.3,48.8,48.3,26.0
+2024-11-25,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,38,6.0,30.4,55.5,55.2,34.0
+2024-11-26,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,71,21.0,53.6,71.0,71.1,52.0
+2024-11-26,SKU_1002,Wireless Bluetooth Earbuds,Electronics,54,22.0,33.3,58.0,58.1,31.7
+2024-11-26,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,76,10.0,21.4,51.0,51.1,21.8
+2024-11-26,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,55,17.0,30.0,53.4,53.7,27.6
+2024-11-26,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,100,38.0,66.1,77.7,77.8,58.1
+2024-11-26,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,23,17.0,16.9,48.0,48.3,21.2
+2024-11-26,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,50,3.0,9.4,44.3,45.2,14.2
+2024-11-26,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,108,62.0,41.0,62.7,63.0,36.0
+2024-11-26,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,30,15.0,26.9,49.0,49.1,27.8
+2024-11-26,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,76,16.0,35.0,55.4,55.5,32.0
+2024-11-27,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,81,68.0,60.7,74.9,75.0,55.8
+2024-11-27,SKU_1002,Wireless Bluetooth Earbuds,Electronics,92,10.0,37.9,59.3,59.4,35.7
+2024-11-27,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,64,15.0,30.9,55.3,55.4,34.5
+2024-11-27,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,90,24.0,35.4,56.6,56.7,35.8
+2024-11-27,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,109,41.0,75.0,78.5,78.6,62.1
+2024-11-27,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,32,15.0,17.7,48.1,48.6,21.0
+2024-11-27,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,55,13.0,16.1,47.6,48.0,22.5
+2024-11-27,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,77,35.0,47.6,65.7,65.8,47.2
+2024-11-27,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,53,9.0,29.0,48.8,48.9,26.4
+2024-11-27,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,60,2.0,43.6,57.4,57.5,40.4
+2024-11-28,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,48,17.0,62.6,75.8,75.3,57.9
+2024-11-28,SKU_1002,Wireless Bluetooth Earbuds,Electronics,20,27.0,49.6,65.2,64.6,48.0
+2024-11-28,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,38,26.0,37.9,58.8,58.2,40.0
+2024-11-28,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,47,34.0,44.9,60.7,60.1,45.7
+2024-11-28,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,100,56.0,84.7,82.7,82.2,68.0
+2024-11-28,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,20,16.0,20.1,51.1,50.6,24.5
+2024-11-28,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,20,6.0,22.1,50.0,49.5,28.7
+2024-11-28,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,91,24.0,53.6,66.7,66.2,47.9
+2024-11-28,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,32,2.0,35.3,51.4,50.9,33.0
+2024-11-28,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,47,42.0,51.9,64.0,63.4,45.3
+2024-11-29,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,92,38.0,67.0,81.2,81.0,60.1
+2024-11-29,SKU_1002,Wireless Bluetooth Earbuds,Electronics,43,43.0,48.6,66.6,66.4,44.3
+2024-11-29,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,48,20.0,39.6,60.9,60.7,41.4
+2024-11-29,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,36,29.0,46.7,61.8,61.6,44.2
+2024-11-29,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,70,59.0,91.0,86.5,86.3,73.2
+2024-11-29,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,47,14.0,20.7,52.9,52.7,25.4
+2024-11-29,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,28,3.0,24.1,52.1,52.0,29.3
+2024-11-29,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,52,40.0,63.1,72.8,72.6,57.9
+2024-11-29,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,69,32.0,39.6,56.7,56.7,36.8
+2024-11-29,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,55,33.0,52.6,66.7,66.5,47.6
+2024-11-30,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,55,69.0,74.7,48.3,48.1,64.2
+2024-11-30,SKU_1002,Wireless Bluetooth Earbuds,Electronics,35,32.0,48.6,31.3,31.1,44.9
+2024-11-30,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,24,22.0,43.6,26.7,26.5,42.8
+2024-11-30,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,25,15.0,47.7,25.6,25.4,41.5
+2024-11-30,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,85,51.0,92.6,51.3,51.1,70.4
+2024-11-30,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,18,11.0,25.4,18.9,18.7,28.2
+2024-11-30,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,10,10.0,27.7,16.8,16.7,29.4
+2024-11-30,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,43,29.0,64.9,35.6,35.4,52.7
+2024-11-30,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,16,26.0,44.9,23.2,23.0,41.3
+2024-11-30,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,10,47.0,55.7,31.7,31.5,46.5
+2024-12-01,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,101,92.0,72.7,78.7,78.5,64.0
+2024-12-01,SKU_1002,Wireless Bluetooth Earbuds,Electronics,57,52.0,49.0,61.5,61.3,46.4
+2024-12-01,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,42,31.0,43.9,55.7,55.5,42.9
+2024-12-01,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,31,72.0,49.1,57.4,57.4,44.4
+2024-12-01,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,114,141.0,97.4,87.4,87.2,77.7
+2024-12-01,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,49,19.0,26.4,48.3,48.0,28.2
+2024-12-01,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,30,24.0,27.7,46.8,47.0,32.7
+2024-12-01,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,87,41.0,66.9,68.3,68.1,57.2
+2024-12-01,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,35,58.0,43.4,51.0,50.8,36.8
+2024-12-01,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,79,67.0,50.4,58.8,58.8,43.8
+2024-12-02,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,61,70.0,74.0,72.9,72.3,60.6
+2024-12-02,SKU_1002,Wireless Bluetooth Earbuds,Electronics,56,47.0,49.7,55.1,54.5,40.9
+2024-12-02,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,50,26.0,45.4,50.8,50.3,38.5
+2024-12-02,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,45,19.0,43.3,50.0,49.4,35.4
+2024-12-02,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,105,77.0,93.6,79.5,79.0,69.8
+2024-12-02,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,26,26.0,30.7,44.6,44.1,28.3
+2024-12-02,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,15,7.0,28.6,41.1,40.8,28.6
+2024-12-02,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,10,56.0,73.4,63.9,63.4,55.2
+2024-12-02,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,63,46.0,40.1,44.5,44.0,29.4
+2024-12-02,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,48,38.0,52.1,53.3,52.8,43.6
+2024-12-03,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,75,71.0,72.7,69.4,69.5,51.2
+2024-12-03,SKU_1002,Wireless Bluetooth Earbuds,Electronics,45,54.0,51.0,55.2,55.3,40.1
+2024-12-03,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,11,76.0,48.9,52.0,52.1,38.0
+2024-12-03,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,33,55.0,47.0,51.6,51.6,36.8
+2024-12-03,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,89,100.0,97.6,80.0,80.1,66.7
+2024-12-03,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,2,23.0,30.7,43.2,43.3,25.4
+2024-12-03,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,15,50.0,29.7,42.3,42.4,27.2
+2024-12-03,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,110,108.0,66.9,60.6,60.8,45.7
+2024-12-03,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,34,30.0,42.6,44.5,44.6,32.6
+2024-12-03,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,40,76.0,53.6,53.7,53.8,38.5
+2024-12-04,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,41,81.0,73.3,70.7,70.7,52.6
+2024-12-04,SKU_1002,Wireless Bluetooth Earbuds,Electronics,57,92.0,49.7,56.6,56.7,37.6
+2024-12-04,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,56,64.0,39.6,49.1,49.3,29.6
+2024-12-04,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,45,90.0,43.9,52.9,53.0,34.0
+2024-12-04,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,98,109.0,96.0,78.6,78.6,60.9
+2024-12-04,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,33,32.0,27.7,42.8,43.0,23.6
+2024-12-04,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,23,55.0,24.7,42.4,42.8,24.2
+2024-12-04,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,44,77.0,67.1,61.8,62.1,55.0
+2024-12-04,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,40,53.0,43.1,44.6,44.9,28.9
+2024-12-04,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,62,60.0,48.4,50.8,50.9,31.5
+2024-12-05,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,50,48.0,67.6,41.5,40.9,46.3
+2024-12-05,SKU_1002,Wireless Bluetooth Earbuds,Electronics,43,20.0,44.7,28.0,27.5,35.3
+2024-12-05,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,20,38.0,38.4,23.5,23.1,33.8
+2024-12-05,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,11,47.0,37.4,26.6,26.0,33.1
+2024-12-05,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,82,100.0,94.4,52.5,52.0,59.1
+2024-12-05,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,21,20.0,27.9,17.8,17.5,27.8
+2024-12-05,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,25,20.0,20.1,15.7,15.1,23.4
+2024-12-05,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,20,91.0,62.4,35.9,35.4,47.7
+2024-12-05,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,5,32.0,41.3,17.7,17.4,27.5
+2024-12-05,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,13,47.0,48.7,25.1,24.6,33.8
+2024-12-06,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,48,92.0,67.9,44.2,44.0,47.5
+2024-12-06,SKU_1002,Wireless Bluetooth Earbuds,Electronics,10,43.0,48.0,32.9,32.7,38.8
+2024-12-06,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,27,48.0,35.9,26.5,26.2,33.2
+2024-12-06,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,23,36.0,32.3,26.4,26.3,30.9
+2024-12-06,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,88,70.0,91.9,52.2,52.0,57.1
+2024-12-06,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,24,47.0,28.0,21.7,21.5,30.0
+2024-12-06,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,10,28.0,20.9,18.2,18.0,25.6
+2024-12-06,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,54,52.0,52.3,35.7,35.5,44.0
+2024-12-06,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,37,69.0,37.4,20.2,20.3,27.9
+2024-12-06,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,22,55.0,43.9,28.3,28.2,34.5
+2024-12-07,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,21,55.0,61.6,41.0,40.7,43.1
+2024-12-07,SKU_1002,Wireless Bluetooth Earbuds,Electronics,60,35.0,43.3,29.5,29.4,33.7
+2024-12-07,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,48,24.0,32.9,23.8,23.5,29.7
+2024-12-07,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,29,25.0,30.4,25.3,25.0,28.6
+2024-12-07,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,64,85.0,94.4,53.1,52.9,55.1
+2024-12-07,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,20,18.0,24.7,18.6,18.4,25.1
+2024-12-07,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,50,10.0,18.3,15.6,15.6,21.4
+2024-12-07,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,47,43.0,52.6,34.2,34.0,43.7
+2024-12-07,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,23,16.0,32.9,18.4,18.2,26.0
+2024-12-07,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,35,10.0,39.1,25.6,25.4,31.8
+2024-12-08,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,36,101.0,56.7,43.6,43.3,44.9
+2024-12-08,SKU_1002,Wireless Bluetooth Earbuds,Electronics,37,57.0,46.9,32.4,32.1,39.9
+2024-12-08,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,21,42.0,36.3,26.0,25.8,33.4
+2024-12-08,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,39,31.0,31.0,26.8,26.6,32.3
+2024-12-08,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,51,114.0,91.4,53.0,52.7,54.3
+2024-12-08,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,21,49.0,25.0,20.8,20.5,25.5
+2024-12-08,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,36,30.0,24.0,19.1,18.8,28.4
+2024-12-08,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,24,87.0,53.1,36.4,36.2,44.1
+2024-12-08,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,10,35.0,33.9,20.5,20.3,27.4
+2024-12-08,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,32,79.0,42.7,30.8,30.6,37.4
+2024-12-09,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,44,61.0,47.4,37.1,36.6,38.1
+2024-12-09,SKU_1002,Wireless Bluetooth Earbuds,Electronics,27,56.0,44.0,25.7,25.2,31.3
+2024-12-09,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,35,50.0,33.3,20.0,19.4,24.9
+2024-12-09,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,21,45.0,32.1,21.8,21.2,27.4
+2024-12-09,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,29,105.0,82.4,43.3,42.7,43.5
+2024-12-09,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,9,26.0,21.0,14.2,13.8,18.8
+2024-12-09,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,15,15.0,24.9,12.6,12.0,21.0
+2024-12-09,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,45,10.0,44.1,28.6,28.1,33.8
+2024-12-09,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,8,63.0,30.3,15.9,15.5,21.8
+2024-12-09,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,10,48.0,36.0,23.6,23.0,28.3
+2024-12-10,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,96,75.0,45.0,37.2,37.3,38.4
+2024-12-10,SKU_1002,Wireless Bluetooth Earbuds,Electronics,22,45.0,39.9,25.8,25.9,31.7
+2024-12-10,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,19,11.0,31.1,20.0,20.1,28.1
+2024-12-10,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,25,33.0,28.7,21.0,21.1,25.9
+2024-12-10,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,6,89.0,71.6,43.0,43.1,44.7
+2024-12-10,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,26,2.0,18.6,13.7,14.0,18.6
+2024-12-10,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,7,15.0,24.9,12.7,12.8,21.0
+2024-12-10,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,40,110.0,49.1,35.0,35.1,43.0
+2024-12-10,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,37,34.0,22.4,15.2,15.4,20.3
+2024-12-10,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,28,40.0,30.6,23.3,23.5,28.7
+2024-12-11,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,51,41.0,48.0,38.8,38.9,47.3
+2024-12-11,SKU_1002,Wireless Bluetooth Earbuds,Electronics,37,57.0,36.6,29.1,29.2,36.1
+2024-12-11,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,17,56.0,32.3,23.7,23.8,30.6
+2024-12-11,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,25,45.0,27.6,23.8,23.8,30.4
+2024-12-11,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,39,98.0,59.7,43.1,43.3,46.8
+2024-12-11,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,16,33.0,22.0,16.6,16.6,22.8
+2024-12-11,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,2,23.0,23.7,14.0,14.2,23.6
+2024-12-11,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,43,44.0,39.1,33.1,33.2,38.8
+2024-12-11,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,21,40.0,22.9,17.1,17.4,25.2
+2024-12-11,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,42,62.0,28.9,25.8,25.9,31.5
+2024-12-12,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,41,50.0,49.4,39.7,39.2,45.2
+2024-12-12,SKU_1002,Wireless Bluetooth Earbuds,Electronics,52,43.0,33.7,27.5,27.0,32.4
+2024-12-12,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,19,20.0,26.7,22.2,21.7,27.4
+2024-12-12,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,14,11.0,24.7,21.0,20.5,27.1
+2024-12-12,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,26,82.0,51.3,45.6,45.0,50.4
+2024-12-12,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,26,21.0,19.6,17.4,17.1,22.6
+2024-12-12,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,11,25.0,20.7,14.9,14.7,23.3
+2024-12-12,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,48,20.0,39.0,34.8,34.3,43.7
+2024-12-12,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,22,5.0,20.1,17.5,17.0,24.2
+2024-12-12,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,34,13.0,26.0,25.7,25.2,33.2
+2024-12-13,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,98,48.0,48.1,44.0,43.8,50.6
+2024-12-13,SKU_1002,Wireless Bluetooth Earbuds,Electronics,53,10.0,35.0,29.1,29.0,37.0
+2024-12-13,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,17,27.0,26.6,25.4,25.2,32.0
+2024-12-13,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,6,23.0,25.1,24.6,24.6,31.6
+2024-12-13,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,101,88.0,43.3,48.6,48.4,50.7
+2024-12-13,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,7,24.0,20.3,21.4,21.5,29.6
+2024-12-13,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,25,10.0,18.7,17.9,17.9,27.6
+2024-12-13,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,3,54.0,43.0,39.0,38.8,48.2
+2024-12-13,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,17,37.0,22.6,22.5,22.3,32.1
+2024-12-13,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,23,22.0,29.0,29.3,29.1,37.8
+2024-12-14,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,71,21.0,55.3,43.0,42.8,58.8
+2024-12-14,SKU_1002,Wireless Bluetooth Earbuds,Electronics,18,60.0,41.1,31.8,31.6,39.7
+2024-12-14,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,21,48.0,25.1,25.2,24.9,30.5
+2024-12-14,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,27,29.0,22.7,23.2,23.2,29.7
+2024-12-14,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,47,64.0,45.1,49.4,49.2,57.8
+2024-12-14,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,21,20.0,17.9,19.6,19.6,26.3
+2024-12-14,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,5,50.0,20.9,18.3,18.1,27.1
+2024-12-14,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,35,47.0,35.7,35.0,35.0,41.8
+2024-12-14,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,20,23.0,19.7,19.1,18.8,26.1
+2024-12-14,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,30,35.0,29.1,27.3,27.1,33.9
+2024-12-15,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,89,36.0,62.4,82.4,82.2,64.7
+2024-12-15,SKU_1002,Wireless Bluetooth Earbuds,Electronics,28,37.0,35.1,65.2,64.9,37.0
+2024-12-15,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,18,21.0,21.3,58.5,58.3,30.5
+2024-12-15,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,22,39.0,22.4,59.4,59.2,32.6
+2024-12-15,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,112,51.0,42.7,82.5,82.3,54.2
+2024-12-15,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,56,21.0,18.0,55.9,55.7,30.2
+2024-12-15,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,24,36.0,14.4,52.6,52.5,24.2
+2024-12-15,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,106,24.0,34.0,70.5,70.3,47.2
+2024-12-15,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,50,10.0,19.3,54.2,54.0,28.5
+2024-12-15,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,56,32.0,28.4,63.6,63.4,38.2
+2024-12-16,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,150,44.0,70.0,77.5,76.9,63.6
+2024-12-16,SKU_1002,Wireless Bluetooth Earbuds,Electronics,68,27.0,33.9,59.6,59.3,34.0
+2024-12-16,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,36,35.0,20.9,54.2,53.6,27.2
+2024-12-16,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,43,21.0,20.0,53.4,52.9,27.5
+2024-12-16,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,99,29.0,51.4,78.7,78.1,63.1
+2024-12-16,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,31,9.0,23.0,51.1,50.6,29.7
+2024-12-16,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,10,15.0,12.7,45.5,45.2,18.3
+2024-12-16,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,97,45.0,45.7,66.1,65.6,50.8
+2024-12-16,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,22,8.0,25.0,51.0,50.7,31.6
+2024-12-16,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,63,10.0,31.9,56.7,56.4,35.8
+2024-12-17,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,87,96.0,85.1,83.8,83.9,79.0
+2024-12-17,SKU_1002,Wireless Bluetooth Earbuds,Electronics,41,22.0,39.7,61.9,62.0,42.0
+2024-12-17,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,26,19.0,21.0,53.4,53.5,28.1
+2024-12-17,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,85,25.0,23.1,54.5,54.6,31.0
+2024-12-17,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,53,6.0,61.4,79.5,79.7,69.5
+2024-12-17,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,46,26.0,26.1,50.5,50.6,26.8
+2024-12-17,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,72,7.0,12.0,45.2,45.7,18.1
+2024-12-17,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,73,40.0,53.1,70.2,70.3,60.0
+2024-12-17,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,45,37.0,27.0,51.6,51.6,29.8
+2024-12-17,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,39,28.0,39.4,60.4,60.5,42.7
+2024-12-18,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,33,51.0,83.9,82.2,82.3,71.6
+2024-12-18,SKU_1002,Wireless Bluetooth Earbuds,Electronics,24,37.0,42.4,63.2,63.3,42.4
+2024-12-18,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,40,17.0,22.0,55.0,55.1,30.5
+2024-12-18,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,14,25.0,31.7,59.1,59.1,43.5
+2024-12-18,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,161,39.0,68.1,84.2,84.3,72.8
+2024-12-18,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,72,16.0,29.0,51.7,51.8,30.9
+2024-12-18,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,28,2.0,21.3,49.6,49.7,31.2
+2024-12-18,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,50,43.0,57.9,68.1,68.1,56.3
+2024-12-18,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,57,21.0,28.1,52.9,53.0,34.7
+2024-12-18,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,60,42.0,41.0,62.0,62.3,44.1
+2024-12-19,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,29,41.0,81.3,79.7,79.1,65.5
+2024-12-19,SKU_1002,Wireless Bluetooth Earbuds,Electronics,36,52.0,40.6,65.8,65.3,43.2
+2024-12-19,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,45,19.0,25.3,56.9,56.4,33.5
+2024-12-19,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,38,14.0,30.1,58.2,57.8,36.7
+2024-12-19,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,73,26.0,85.6,90.9,90.4,94.1
+2024-12-19,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,39,26.0,37.0,55.7,55.1,39.6
+2024-12-19,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,17,11.0,25.0,50.7,50.4,30.1
+2024-12-19,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,76,48.0,58.9,68.6,68.1,53.6
+2024-12-19,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,46,22.0,33.3,55.4,55.0,39.3
+2024-12-19,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,45,34.0,43.6,65.0,64.5,48.0
+2024-12-20,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,176,98.0,79.6,85.1,84.9,70.1
+2024-12-20,SKU_1002,Wireless Bluetooth Earbuds,Electronics,37,53.0,38.3,68.0,67.8,44.4
+2024-12-20,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,35,17.0,29.0,59.9,59.6,38.7
+2024-12-20,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,41,6.0,33.6,60.6,60.4,41.8
+2024-12-20,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,80,101.0,92.3,97.4,97.2,93.1
+2024-12-20,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,28,7.0,38.9,56.7,56.5,39.5
+2024-12-20,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,40,25.0,25.9,53.3,53.3,32.2
+2024-12-20,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,131,3.0,62.9,71.4,71.3,62.0
+2024-12-20,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,28,17.0,36.7,59.0,58.8,43.5
+2024-12-20,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,69,23.0,45.1,65.7,65.5,47.5
+2024-12-21,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,182,71.0,90.7,88.7,88.5,90.0
+2024-12-21,SKU_1002,Wireless Bluetooth Earbuds,Electronics,102,18.0,36.0,65.3,65.0,41.2
+2024-12-21,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,78,21.0,31.6,60.0,59.8,38.8
+2024-12-21,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,19,27.0,38.6,61.5,61.2,43.4
+2024-12-21,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,57,47.0,89.3,93.7,93.5,89.6
+2024-12-21,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,10,21.0,41.9,57.6,57.4,39.2
+2024-12-21,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,10,5.0,28.0,53.7,53.5,36.7
+2024-12-21,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,64,35.0,81.1,78.5,78.3,76.5
+2024-12-21,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,76,20.0,38.3,57.7,57.5,40.1
+2024-12-21,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,49,30.0,51.7,67.5,67.2,50.7
+2024-12-22,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,90,89.0,106.6,91.6,91.4,95.8
+2024-12-22,SKU_1002,Wireless Bluetooth Earbuds,Electronics,67,28.0,48.0,71.0,70.8,56.5
+2024-12-22,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,71,18.0,39.7,63.3,63.1,48.1
+2024-12-22,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,82,22.0,37.4,63.7,63.5,43.6
+2024-12-22,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,148,112.0,90.7,99.4,99.2,89.3
+2024-12-22,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,39,56.0,40.3,59.0,59.0,38.9
+2024-12-22,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,48,24.0,28.7,55.5,55.4,36.9
+2024-12-22,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,36,106.0,85.3,82.3,82.1,71.2
+2024-12-22,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,33,50.0,46.3,62.6,62.4,47.8
+2024-12-22,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,44,56.0,54.4,70.2,70.0,50.0
+2024-12-23,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,68,150.0,106.7,84.0,83.4,75.9
+2024-12-23,SKU_1002,Wireless Bluetooth Earbuds,Electronics,87,68.0,53.6,66.4,65.8,48.4
+2024-12-23,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,50,36.0,47.3,60.5,60.0,46.9
+2024-12-23,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,32,43.0,46.0,60.5,60.0,48.3
+2024-12-23,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,59,99.0,95.9,93.8,93.3,90.9
+2024-12-23,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,30,31.0,37.9,52.8,52.3,32.5
+2024-12-23,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,21,10.0,32.1,50.1,49.8,35.3
+2024-12-23,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,54,97.0,75.3,73.5,73.0,57.0
+2024-12-23,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,25,22.0,43.9,53.3,52.8,33.4
+2024-12-23,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,42,63.0,52.7,63.0,62.4,40.0
+2024-12-24,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,60,87.0,95.0,46.0,46.0,67.6
+2024-12-24,SKU_1002,Wireless Bluetooth Earbuds,Electronics,19,41.0,56.3,31.9,32.0,49.8
+2024-12-24,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,21,26.0,49.3,26.7,26.8,44.0
+2024-12-24,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,44,85.0,44.4,27.6,27.7,42.2
+2024-12-24,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,63,53.0,90.1,53.4,53.5,73.5
+2024-12-24,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,12,46.0,37.7,18.9,19.0,30.5
+2024-12-24,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,7,72.0,33.7,18.8,18.9,32.6
+2024-12-24,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,23,73.0,69.1,38.8,38.9,53.3
+2024-12-24,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,5,45.0,44.3,19.8,19.9,32.4
+2024-12-24,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,35,39.0,49.7,27.6,27.7,35.9
+2024-12-25,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,26,33.0,91.1,43.8,43.8,65.4
+2024-12-25,SKU_1002,Wireless Bluetooth Earbuds,Electronics,35,24.0,53.1,30.2,30.3,42.1
+2024-12-25,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,31,40.0,48.6,25.7,25.8,38.6
+2024-12-25,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,36,14.0,38.6,25.5,25.6,37.8
+2024-12-25,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,39,161.0,91.6,57.5,57.6,72.9
+2024-12-25,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,13,72.0,32.9,20.0,20.2,28.3
+2024-12-25,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,8,28.0,24.4,16.1,16.3,25.4
+2024-12-25,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,52,50.0,62.0,34.6,34.6,44.9
+2024-12-25,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,38,57.0,38.6,19.2,19.4,29.7
+2024-12-25,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,16,60.0,49.1,28.0,28.1,34.8
+2024-12-26,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,80,29.0,90.1,43.3,42.7,63.3
+2024-12-26,SKU_1002,Wireless Bluetooth Earbuds,Electronics,38,36.0,54.7,31.5,30.9,45.2
+2024-12-26,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,22,45.0,47.3,26.5,25.9,38.3
+2024-12-26,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,13,38.0,41.7,26.9,26.3,36.2
+2024-12-26,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,78,73.0,74.1,49.9,49.3,55.0
+2024-12-26,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,25,39.0,24.4,20.0,19.6,26.6
+2024-12-26,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,10,17.0,21.6,16.1,15.7,23.9
+2024-12-26,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,35,76.0,62.3,38.1,37.5,48.5
+2024-12-26,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,18,46.0,35.9,20.1,19.5,30.7
+2024-12-26,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,18,45.0,42.9,26.3,25.7,30.6
+2024-12-27,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,58,176.0,97.4,55.7,55.5,76.9
+2024-12-27,SKU_1002,Wireless Bluetooth Earbuds,Electronics,37,37.0,55.0,35.5,35.3,51.1
+2024-12-27,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,20,35.0,44.0,28.1,27.9,39.7
+2024-12-27,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,24,41.0,38.1,27.3,27.2,34.9
+2024-12-27,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,67,80.0,74.9,52.9,52.7,62.6
+2024-12-27,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,13,28.0,22.4,22.2,22.0,27.7
+2024-12-27,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,19,40.0,20.6,20.2,20.1,28.6
+2024-12-27,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,29,131.0,56.4,39.6,39.3,44.9
+2024-12-27,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,8,28.0,31.9,21.6,21.4,29.2
+2024-12-27,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,24,69.0,39.0,29.7,29.5,33.9
+2024-12-28,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,60,182.0,80.6,51.3,51.1,61.2
+2024-12-28,SKU_1002,Wireless Bluetooth Earbuds,Electronics,14,102.0,55.0,36.8,36.6,50.3
+2024-12-28,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,38,78.0,41.9,28.0,27.8,37.9
+2024-12-28,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,31,19.0,35.7,25.6,25.3,34.1
+2024-12-28,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,26,57.0,73.0,50.5,50.3,58.8
+2024-12-28,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,28,10.0,20.3,19.4,19.3,24.0
+2024-12-28,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,19,10.0,17.6,17.5,17.3,25.1
+2024-12-28,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,55,64.0,41.9,34.9,34.6,34.8
+2024-12-28,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,12,76.0,29.0,21.2,21.1,26.9
+2024-12-28,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,36,49.0,32.6,26.8,26.6,30.5
+2024-12-29,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,30,90.0,63.1,50.9,50.7,54.9
+2024-12-29,SKU_1002,Wireless Bluetooth Earbuds,Electronics,67,67.0,42.4,34.7,34.6,42.0
+2024-12-29,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,47,71.0,36.1,28.6,28.4,35.6
+2024-12-29,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,49,82.0,37.4,29.5,29.3,36.9
+2024-12-29,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,46,148.0,68.6,54.8,54.6,58.9
+2024-12-29,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,18,39.0,22.9,23.8,23.5,29.6
+2024-12-29,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,12,48.0,18.9,20.6,20.4,27.4
+2024-12-29,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,62,36.0,40.6,38.2,38.0,42.6
+2024-12-29,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,3,33.0,19.9,21.8,21.7,26.6
+2024-12-29,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,47,44.0,30.7,30.6,30.3,34.4
+2024-12-30,SKU_1001,Vintage Ceramic Coffee Mug,Home & Kitchen,31,68.0,54.6,44.7,44.1,49.7
+2024-12-30,SKU_1002,Wireless Bluetooth Earbuds,Electronics,30,87.0,42.4,31.7,31.2,41.9
+2024-12-30,SKU_1003,Ergonomic Memory Foam Chair Cushion,Office,16,50.0,32.7,22.5,22.0,28.7
+2024-12-30,SKU_1004,Organic Bamboo Bath Towel Set,Home & Kitchen,40,32.0,32.7,23.1,22.5,31.0
+2024-12-30,SKU_1005,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,16,59.0,54.0,46.2,45.7,48.6
+2024-12-30,SKU_1006,Minimalist Smart LED Desk Lamp,Lighting,21,30.0,19.9,16.6,16.0,21.3
+2024-12-30,SKU_1007,Mechanical Gaming Keyboard RGB,Electronics,11,21.0,13.7,12.7,12.4,18.9
+2024-12-30,SKU_1008,Aromatherapy Essential Oil Diffuser,Wellness,35,54.0,44.3,32.0,31.4,39.8
+2024-12-30,SKU_1009,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,9,25.0,15.6,16.5,16.1,19.4
+2024-12-30,SKU_1010,Non-Stick Cast Iron Skillet 12-inch,Cookware,32,42.0,31.1,25.0,24.4,30.3

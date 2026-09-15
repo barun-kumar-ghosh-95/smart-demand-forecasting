@@ -1,0 +1,44 @@
+{
+  "Baseline: Last Period": {
+    "MAE": 19.258,
+    "RMSE": 26.287,
+    "sMAPE": 56.0,
+    "WMAPE": 51.53,
+    "Bias": -0.33
+  },
+  "Baseline: 7-Day Moving Avg": {
+    "MAE": 16.263,
+    "RMSE": 22.475,
+    "sMAPE": 46.72,
+    "WMAPE": 43.51,
+    "Bias": -2.44
+  },
+  "Baseline: Seasonal Naive (Lag 7)": {
+    "MAE": 22.353,
+    "RMSE": 30.901,
+    "sMAPE": 63.67,
+    "WMAPE": 59.81,
+    "Bias": -4.0
+  },
+  "ML: Regularized Linear (Ridge)": {
+    "MAE": 14.027,
+    "RMSE": 18.956,
+    "sMAPE": 41.05,
+    "WMAPE": 37.53,
+    "Bias": -0.0
+  },
+  "ML: Gradient Boosted Forecaster": {
+    "MAE": 14.004,
+    "RMSE": 18.937,
+    "sMAPE": 41.01,
+    "WMAPE": 37.47,
+    "Bias": -0.37
+  },
+  "Ablation: GBDT (Without Festival Features)": {
+    "MAE": 14.656,
+    "RMSE": 20.479,
+    "sMAPE": 43.16,
+    "WMAPE": 39.21,
+    "Bias": -3.99
+  }
+}

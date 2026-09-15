@@ -1,0 +1,11 @@
+sku,current_inventory,lead_time_days,lead_time_predicted_demand,safety_stock,reorder_point,stockout_risk,reorder_needed,recommended_reorder_qty,days_of_supply,risk_severity,inventory_source,description,category,unit_price
+SKU_1001,326,7,334.0,120,453,True,True,128,6.8,HIGH (Stockout Imminent),SIMULATED_LAYER,Vintage Ceramic Coffee Mug,Home & Kitchen,12.344027397260271
+SKU_1002,440,7,230.9,78,308,False,False,0,13.3,LOW (Healthy),SIMULATED_LAYER,Wireless Bluetooth Earbuds,Electronics,49.36671232876713
+SKU_1003,269,7,184.5,64,248,False,False,0,10.2,LOW (Healthy),SIMULATED_LAYER,Ergonomic Memory Foam Chair Cushion,Office,29.576602739726024
+SKU_1004,245,7,184.0,74,257,False,True,13,9.3,MEDIUM (Reorder Needed),SIMULATED_LAYER,Organic Bamboo Bath Towel Set,Home & Kitchen,33.57616438356164
+SKU_1005,233,7,363.5,107,470,True,True,238,4.5,HIGH (Stockout Imminent),SIMULATED_LAYER,Insulated Stainless Water Bottle 32oz,Sports & Outdoors,21.725753424657533
+SKU_1006,83,7,139.7,62,201,True,True,119,4.2,HIGH (Stockout Imminent),SIMULATED_LAYER,Minimalist Smart LED Desk Lamp,Lighting,39.00745205479452
+SKU_1007,47,7,121.1,69,190,True,True,144,2.7,HIGH (Stockout Imminent),SIMULATED_LAYER,Mechanical Gaming Keyboard RGB,Electronics,78.9927397260274
+SKU_1008,470,7,254.3,95,349,False,False,0,12.9,LOW (Healthy),SIMULATED_LAYER,Aromatherapy Essential Oil Diffuser,Wellness,24.67835616438356
+SKU_1009,168,7,139.0,55,194,False,True,27,8.5,MEDIUM (Reorder Needed),SIMULATED_LAYER,Heavy-Duty Canvas Travel Backpack,Luggage & Travel,54.31438356164384
+SKU_1010,306,7,192.3,57,249,False,False,0,11.1,LOW (Healthy),SIMULATED_LAYER,Non-Stick Cast Iron Skillet 12-inch,Cookware,41.97005479452055

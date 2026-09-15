@@ -235,9 +235,7 @@ docker-compose up --build
 
 ---
 
-## 💼 Resume Description
-
-```text
+##context
 Smart Demand Forecasting Platform | Python, LightGBM/XGBoost, FastAPI, Docker, Streamlit
 • Built an end-to-end demand forecasting and inventory replenishment platform predicting daily/weekly sales for 10+ retail SKUs using chronological train/validation/test splits.
 • Engineered 40+ lag, rolling-window, cyclical calendar, and holiday surge features, preventing temporal data leakage via strict shift operations.
